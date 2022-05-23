@@ -45,14 +45,13 @@
     }},
     "submissionStart" : {   "dateTime": {
       "min": "2022-01-01T00:00:00Z",
-      "max": "2022-04-31T23:59:59Z"
+      "max": "2022-04-30T00:00:00Z"
     }},
     "submittedBy" : {   "dateTime": {
       "min": "2022-01-01T00:00:00Z",
-      "max": "2022-04-30T23:59:59Z"
+      "max": "2022-04-30T00:00:00Z"
     }}
   },
-
   "Response": {
     "title": { "string": {} },
     "createdAt" : {   "dateTime": {
