@@ -30,7 +30,7 @@
   "Opportunity": {
     "title": { "string": {} },
     "description" : { "loremParagraphs": { "minLength": 200, "maxLength": 500 }},
-    "Qualification": {
+    "qualification": {
       "string":  [
         "A",
         "B",
@@ -43,35 +43,27 @@
       "min": "2022-01-01T00:00:00Z",
       "max": "2022-04-31T23:59:59Z"
     }},
- 
     "submissionStart" : {   "dateTime": {
       "min": "2022-01-01T00:00:00Z",
       "max": "2022-04-31T23:59:59Z"
     }},
     "submittedBy" : {   "dateTime": {
       "min": "2022-01-01T00:00:00Z",
-      "max": "2022-04-31T23:59:59Z"
-    }},
+      "max": "2022-04-30T23:59:59Z"
+    }}
   },
 
   "Response": {
     "title": { "string": {} },
     "createdAt" : {   "dateTime": {
       "min": "2022-01-01T00:00:00Z",
-      "max": "2022-04-31T23:59:59Z"
-    }},
- 
+      "max": "2022-04-30T23:59:59Z"
+    }}
   },
   "ResponseItem": {
     "title": { "string": {} },
     "specification": {   "loremSentences": { "minLength": 100, "maxLength": 200 }},
-    "qty": {"int": { "min": 3, "max": 10 } } ,
-  },
-  "Qualification": {
-    "title": { "string": {} },
-    "photo": {
-      "regexp": "https://picsum\\.photos/seed/[0-9]{5}/1920/1080"
-    }
+    "qty": {"int": { "min": 3, "max": 10 } } 
   },
   "Invoice": {
     "title": { "string": {} },
@@ -79,16 +71,14 @@
     "amount": {"int": { "min": 50000, "max": 500000 } } ,
     "createdAt" : {   "dateTime": {
       "min": "2022-01-01T00:00:00Z",
-      "max": "2022-04-31T23:59:59Z"
+      "max": "2022-04-30T23:59:59Z"
     }},
     "dueDate" : {   "dateTime": {
       "min": "2022-01-01T00:00:00Z",
-      "max": "2022-04-31T23:59:59Z"
-    }},
+      "max": "2022-04-30T23:59:59Z"
+    }}
   },
   "Invitation": {
-    "title": { "string": {} },
-
+    "title": { "string": {} }
   }
-
 }
