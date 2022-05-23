@@ -10,13 +10,13 @@
     ] },
     "createdAt" : {   "dateTime": {
       "min": "2020-01-01T00:00:00Z",
-      "max": "2022-04-31T23:59:59Z"
+      "max": "2022-04-30T23:59:59Z"
     }}
   },
   "Company": {
     "name": { "regexp": "[A-Z][a-z]{5,10}" } ,
     "address": { "loremWords": { "minLength": 20, "maxLength": 50 }},
-    "city":{ "regexp": "[A-Z][a-z]{5,10}" } } ,
+    "city":{ "regexp": "[A-Z][a-z]{5,10}" }  ,
     "phone": {"int": { "min": 6000000, "max": 6999999 } } ,
     "contact":  { "regexp": "[A-Z][a-z]{5,10}" } ,
     "category": {  "string":  [
@@ -87,7 +87,8 @@
     }},
   },
   "Invitation": {
-    "title": { "string": {} }
+    "title": { "string": {} },
+
   }
 
 }
