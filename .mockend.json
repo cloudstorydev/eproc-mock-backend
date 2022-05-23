@@ -59,11 +59,7 @@
       "max": "2022-04-30T23:59:59Z"
     }}
   },
-  "ResponseItem": {
-    "title": { "string": {} },
-    "specification": {   "loremSentences": { "minLength": 100, "maxLength": 200 }},
-    "qty": {"int": { "min": 3, "max": 10 } } 
-  },
+
   "Invoice": {
     "title": { "string": {} },
     "poNo":  { "string": {} },
