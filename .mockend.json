@@ -1,6 +1,6 @@
 {
   "Account": {
-    "id": {"int" :{}},
+ 
     "name": { "regexp": "[A-Z][a-z]{5,10}" } ,
     "email": { "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}" } ,
     "avatar": { "regexp": "https://i\\.pravatar\\.cc/150\\?u=[0-9]{5}" },
@@ -18,7 +18,7 @@
     }}
   },
   "Company": {
-    "id": {"int" :{}},
+   
     "name": { "regexp": "[A-Z][a-z]{5,10}" } ,
     "address": { "loremWords": { "minLength": 20, "maxLength": 50 }},
     "city":{ "regexp": "[A-Z][a-z]{5,10}" }  ,
@@ -40,7 +40,7 @@
 
   },
   "Opportunity": {
-    "id": {"int" :{}},
+ 
     "title": { "string": {} },
     "description" : { "loremParagraphs": { "minLength": 200, "maxLength": 500 }},
     "qualification": {
@@ -69,7 +69,7 @@
     }}
   },
   "Response": {
-    "id": {"int" :{}},
+   
     "title": { "string": {} },
     "createdAt" : {   "dateTime": {
       "min": "2022-01-01T00:00:00Z",
@@ -92,7 +92,7 @@
   },
 
   "Project": {
-    "id": {"int" :{}},
+   
     "title": { "string": {} },
     "description" : { "loremParagraphs": { "minLength": 200, "maxLength": 500 }},
     "status":{
@@ -123,7 +123,7 @@
   }, 
 
   "Invoice": {
-    "id": {"int" :{}},
+ 
     "title": { "string": {} },
     "invoiceNo":  { "string": {} },
     "amount": {"int": { "min": 50000, "max": 500000 } } ,
@@ -146,7 +146,17 @@
     }}
   },
   "Invitation": {
-    "id": {"int" :{}},
-    "title": { "string": {} }
+  
+    "title": { "string": {} },
+    "opportunity": {
+      "belongsTo": "Opportunity"
+    },
+    "company": {
+      "belongsTo": "Company"
+    },
+    "createdAt" : {   "dateTime": {
+      "min": "2022-01-01T00:00:00Z",
+      "max": "2022-04-30T23:59:59Z"
+    }}
   }
 }
